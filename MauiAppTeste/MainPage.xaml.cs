@@ -22,7 +22,6 @@
             double A = Double.Parse(num1.Text);
             double B = Double.Parse(num2.Text);
             double C = Double.Parse(num3.Text);
-            Console.WriteLine("Calculando...");
             double resposta2 = 0;
             double resposta = (Math.Pow(A, 2) + 4 * B * C);
             resposta2 = (Math.Pow(A, 2) - 4 * B * C);
