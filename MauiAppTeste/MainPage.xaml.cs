@@ -22,12 +22,12 @@
             double A = Double.Parse(num1.Text);
             double B = Double.Parse(num2.Text);
             double C = Double.Parse(num3.Text);
-            double resposta2 = 0;
-            double resposta = (Math.Pow(A, 2) + 4 * B * C);
-            resposta2 = (Math.Pow(A, 2) - 4 * B * C);
+            double delta = (B * B) - (4 * A * C);
 
+            double r1 = ((-1 * B) + Math.Sqrt(delta)) / (2 * A);
+            double r2 = ((-1 * B) - Math.Sqrt(delta)) / (2 * A); ;
 
-            DisplayAlert("Resultado", "Positivo: DELTA = " + A + "² + 4 * " + B + " * " + C + "\nResultado Positivo é: " + resposta + "\nResultado Negativo é: " + resposta2, "Ok");
+            DisplayAlert("Resultado", "Resultado é: " + r1 + " e " + r2, "Ok");
         }
     }
 
